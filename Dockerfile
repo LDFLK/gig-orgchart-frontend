@@ -10,7 +10,7 @@ RUN npm install react-scripts@3.0.1 -g --silent
 COPY . /app
 
 # set baseurl to get connected with backend API
-ARG SERVER_URL=https://f2c7f522-ef47-48ce-a429-3fc2f15d2011-copilote1.e1-us-east-azure.choreoapis.dev/ldf/gig-backend/v1/
+ARG SERVER_URL=https://f2c7f522-ef47-48ce-a429-3fc2f15d2011-copilote1.e1-us-east-azure.choreoapis.dev/ldf/gig-backend2/v1.0/
 
 ENV REACT_APP_SERVER_URL=$SERVER_URL
 
