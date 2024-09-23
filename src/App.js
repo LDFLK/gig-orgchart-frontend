@@ -33,9 +33,14 @@ function App() {
     }, []);
 
     async function getAccessToken() {
+        // Token request URL, defaults to "/". Used to obtain the access token for OAuth 2.0.
         const tokenEndpoint = window?.configs?.tokenEndpoint ? window.configs.tokenEndpoint : "/";
-        const clientId = window?.configs?.clientId ? window.configs.clientId : "id";;
-        const clientSecret = window?.configs?.clientSecret ? window.configs.clientSecret : "secret";;
+.
+        // OAuth 2.0 client ID, defaults to "id". Identifies the application.
+        const clientId = window?.configs?.clientId ? window.configs.clientId : "id";
+
+        // OAuth 2.0 client secret, defaults to "secret". Authenticates the application.
+        const clientSecret = window?.configs?.clientSecret ? window.configs.clientSecret : "secret";
 
         try {
             const response = await fetch(tokenEndpoint, {
